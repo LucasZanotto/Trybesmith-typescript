@@ -5,7 +5,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/products', ProductsRoutes);
+app.use('/', ProductsRoutes);
 
 app.get('/', (req: Request, res: Response) => {
   res.status(200).send('Conexão ta Okey :D');

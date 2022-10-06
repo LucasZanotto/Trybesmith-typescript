@@ -31,3 +31,8 @@ export default class ProductModel {
 // name: string;
 // amount: number;
 // orderId?: number;
+
+// "username": "MAX",
+//   "classe": "swordsman",
+//   "level": 10,
+//   "password": "SavingPeople"
