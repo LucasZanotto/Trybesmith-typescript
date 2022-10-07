@@ -21,7 +21,8 @@ export default class OrderModel {
       FROM Trybesmith.Orders ord
       INNER JOIN Trybesmith.Products pr 
       ON ord.id = pr.orderId
-      GROUP BY ord.id`);
+      GROUP BY ord.id
+      ORDER BY ord.id ASC`);
     const [rows] = result;
     return rows as Order[];
   }
